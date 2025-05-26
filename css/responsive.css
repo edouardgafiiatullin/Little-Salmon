@@ -1,0 +1,42 @@
+@media (min-width: 320px) {
+    .tab {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 694px) {
+    .tab {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) {
+    .tab {
+        gap: 0px;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 843px) {
+    .tab {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 903px) {
+    .tab {
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 970px) {
+    .tab {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 1200px) {
+    .tab {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+} /* it's all good */
