@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HEAD-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Little Salmon Restaurant">
+        <meta name="description" content="Little Salmon Restaurant is a harbour of finest tastes">
+
+        <title>Little Salmon</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="icon" href="css/icon.ico">
+
+    <!-- Social media meta tags-->
+        <meta property="og:title" content="Little Salmon Restaurant">
+        <meta name="og:description" content="Little Salmon Restaurant is a harbour of finest tastes">
+        <meta property="og:url" content="https://littlesalmon.com">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://littlesalmon.com/css/icon.png">
+    <!-- Social media meta tags--> 
+    </head>
+<!--HEAD-->
+
+    <body>
+    <!--BODY: HEADER-->    
+        <header>
+            <div id="logo" class="logo">
+                <img src="images/logo-no.png" alt="Little Salmon restaurant">
+            </div>
+            <p class="moto"><i>Discover the world of culinary masterpieces</i></p>
+        </header>
+        <!--BODY: HEADER--> 
+
+        <main>
+            <!--MAIN: MENU-->
+            <article>
+                <section>
+                    <div class="navigation-arrow">
+                        <a href="#logo">
+                            <img class="link" src="images/navigation-arrow-2.png" title="Scroll up">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <h2 class="menu-header">Our menu</h2>
+
+                        <div class="tab">
+                            <button onclick="document.getElementById('Soups').scrollIntoView({behavior: 'smooth'})">Soups</button>
+                            <button onclick="document.getElementById('Salads').scrollIntoView({behavior: 'smooth'})">Salads</button>
+                            <button onclick="document.getElementById('Appetizers').scrollIntoView({behavior: 'smooth'})">Appetizers</button>
+                            <button onclick="document.getElementById('Pasta').scrollIntoView({behavior: 'smooth'})">Pasta & Risotto</button>
+                            <button onclick="document.getElementById('Fish&Seafood').scrollIntoView({behavior: 'smooth'})">Fish & Seafood</button>
+                            <button onclick="document.getElementById('Sides').scrollIntoView({behavior: 'smooth'})">Sides</button>
+                            <button onclick="document.getElementById('Drinks').scrollIntoView({behavior: 'smooth'})">Drinks</button>
+                        </div>
+
+                        <h3 id="Soups" class="menu-title-soups">Soups</h3>
+                        <div class="menu-description-soups">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Fish Soup</p>
+                                    <p class="item-description">fresh sea grouper and vegetables</p>
+                                </div>
+                                <p class="item-price">$22.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Velouté soup of mushrooms</p>
+                                    <p class="item-description">shitake, chestnut, sour apple, thyme</p>
+                                </div>
+                                <p class="item-price">$19.00</p>
+                            </div>
+                        </div>
+
+                        <h3 id="Salads" class="menu-title-salads">Salads</h3>
+                        <div class="menu-description-salads">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Greek Salad</p>
+                                    <p class="item-description">cherry tomatoes, cucumber, feta cheese P.D.O., pepper, onion, caper, kalamon olives, mini carob rusks and extra virgin olive oil</p>
+                                </div>
+                                <p class="item-price">$19.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Chicken Salad</p>
+                                    <p class="item-description">chinese and red cabbage, radicchio, coriander, fresh onion, roasted sesame, crispy pies, sesame-soya sauce</p>
+                                </div>
+                                <p class="item-price">$23.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Green Salad</p>
+                                    <p class="item-description">baby lettuce, asparagus, vinaigrette of lemon and basil olive oil</p>
+                                </div>
+                                <p class="item-price">$22.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Lobster’s Ceasar’s</p>
+                                    <p class="item-description">lettuce hearts, crispy bacon, celery, parmesan Caesar’s dressing</p>
+                                </div>
+                                <p class="item-price">$42.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Burrata</p>
+                                    <p class="item-description">cherry tomatoes, basil olive oil, carob</p>
+                                </div>
+                                <p class="item-price">$24.00</p>
+                            </div>
+                        </div>
+
+                        <h3 id="Appetizers" class="menu-title-cold-appetizers">Cold Appetizers</h3>
+                        <div class="menu-description-cold-appetizers">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Ceviche sea bass</p>
+                                    <p class="item-description">mango, guacamole, radish, orange, lime, chili, tobiko, rice cracker</p>
+                                </div>
+                                <p class="item-price">$32.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Fish roe cream</p>
+                                    <p class="item-description">white fish roe cream with smoked eel, kritamo, botargo, crispy crostini</p>
+                                </div>
+                                <p class="item-price">$26.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Beef carpaccio</p>
+                                    <p class="item-description">Alonissos tuna cream, capers, rocket, fresh onion</p>
+                                </div>
+                                <p class="item-price">$32.00</p>
+                            </div>
+                        </div>
+
+                        <h3 class="menu-title-warm-appetizers">Warm Appetizers</h3>
+                        <div class="menu-description-warm-appetizers">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Crayfish</p>
+                                    <p class="item-description">spicy mayonnaise, lime</p>
+                                </div>
+                                <p class="item-price">$28.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Mushrooms and asparagus</p>
+                                    <p class="item-description">baby shitake, green asparagus, truffle sauce</p>
+                                </div>
+                                <p class="item-price">$24.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Squid</p>
+                                    <p class="item-description">in a crispy crust, black garlic aioli</p>
+                                </div>
+                                <p class="item-price">$26.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Octopus</p>
+                                    <p class="item-description">fava cream, kritamo, shallots and parsley olive oil</p>
+                                </div>
+                                <p class="item-price">$28.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">King crab</p>
+                                    <p class="item-description">salicorne, brick, lime sauce</p>
+                                </div>
+                                <p class="item-price">$42.00</p>
+                            </div>
+                        </div>
+
+                        <h3 id="Pasta" class="menu-title-pasta">Pasta & Risotto</h3>
+                        <div class="menu-description-pasta">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Mushroom risotto</p>
+                                    <p class="item-description">parmesan, fresh truffle</p>
+                                </div>
+                                <p class="item-price">$34.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Lobster pasta</p>
+                                    <p class="item-description">fresh tomato, basil, fresh thyme</p>
+                                </div>
+                                <p class="item-price">$68.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Tagliatelle ‘Pasticcio’</p>
+                                    <p class="item-description">chopped veal fillet, tomato, parmesan, béchamel foam</p>
+                                </div>
+                                <p class="item-price">$34.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Spaghetti Botargo</p>
+                                    <p class="item-description">chili peppers, lemon, parsley</p>
+                                </div>
+                                <p class="item-price">$34.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Black orzo of sea food</p>
+                                    <p class="item-description">sea grouper, salmon, scallop, shrimp sauce and confit of cherry tomatoes</p>
+                                </div>
+                                <p class="item-price">$38.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Linguini with shrimps</p>
+                                    <p class="item-description">fresh tomato, ouzo and saffron</p>
+                                </div>
+                                <p class="item-price">$39.00</p>
+                            </div>
+                        </div>
+
+                        <h3 id="Fish&Seafood" class="menu-title-fish-and-seafood">Fish & Seafood</h3>
+                        <div class="menu-description-fish-and-seafood">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Sea grouper</p>
+                                    <p class="item-description">celery root, asparagus, lemon sauce</p>
+                                </div>
+                                <p class="item-price">$61.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Sea bass fillet</p>
+                                    <p class="item-description">baby potatoes, broccolini, white wine sauce</p>
+                                </div>
+                                <p class="item-price">$38.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Sole</p>
+                                    <p class="item-description">steamed vegetables and aromatic lemon oil</p>
+                                </div>
+                                <p class="item-price">$64.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Cod</p>
+                                    <p class="item-description">poached cod fillet, chard, myrtle, egg and lemon sauce from its broth</p>
+                                </div>
+                                <p class="item-price">$44.00</p>
+                            </div>
+                        </div>
+
+                        <h3 id="Sides" class="menu-title-sides">Sides</h3>
+                        <div class="menu-description-sides">
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">French fries</p>
+                                </div>
+                                <p class="item-price">$6.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">French fries with truffle and parmesan</p>
+                                </div>
+                                <p class="item-price">$8.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Potato puree</p>
+                                </div>
+                                <p class="item-price">$6.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Grilled Asparagus</p>
+                                </div>
+                                <p class="item-price">$9.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Steamed vegetables</p>
+                                </div>
+                                <p class="item-price">$7.00</p>
+                            </div>
+                        </div>
+
+
+                        <h3 id="Drinks" class="menu-title-drinks">Drinks</h3>
+                        <div class="menu-description-drinks">
+                            <h3 class="menu-title-red-wine">Red Wine</h3>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Sangiovese Torrebruna 2020</p>
+                                    <p class="item-description">Toscana, Italy</p>
+                                </div>
+                                <p class="item-price">$59.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Chianti Riserva Tomaiolo 2020</p>
+                                    <p class="item-description">Toscana, Italy</p>
+                                </div>
+                                <p class="item-price">$59.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Chianti Classico Riserva Castellani 2017</p>
+                                    <p class="item-description">Toscana, Italy</p>
+                                </div>
+                                <p class="item-price">$69.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Malbec PSH Philipshell</p>
+                                    <p class="item-description">Mendoza, Argentina</p>
+                                </div>
+                                <p class="item-price">$59.00</p>
+                            </div>
+                            <div class="item-two-columns">
+                                <div class="item-title-and-description">
+                                    <p class="item-title">Cabernet Sauvignon La Lecciaia 2016</p>
+                                    <p class="item-description">Toscana, Italy</p>
+                                </div>
+                                <p class="item-price">$69.00</p>
+                            </div>
+                        </div>
+
+                            
+                            <h3 class="menu-title-rose-wine">Rosé Wine</h3>
+                            <div class="menu-description-rose">
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Rose Mimi en Provence</p>
+                                        <p class="item-description">Provence, France</p>
+                                    </div>
+                                    <p class="item-price">$17 Glass / $59 Bottle</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Provence Brut Sparkling Couve Prestige</p>
+                                        <p class="item-description">Provence, France</p>
+                                    </div>
+                                    <p class="item-price">$17 Glass / $59 Bottle</p>
+                                </div>
+                            </div>
+
+                            <h3 class="menu-title-white-wine">White Wine</h3>
+                            <div class="menu-description-white">
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Pinot Grigio Castellani 2021</p>
+                                        <p class="item-description">Veneto, Italy</p>
+                                    </div>
+                                    <p class="item-price">$59.00</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Sauvignon Blanc Petit Bourgeois 2021</p>
+                                        <p class="item-description">Loire, France</p>
+                                    </div>
+                                    <p class="item-price">$59.00</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Chardonnay Langhe Rocca Giovanni 2021</p>
+                                        <p class="item-description">Piemonte, Italy</p>
+                                    </div>
+                                    <p class="item-price">$59.00</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Chardonnay Hamilton 2020</p>
+                                        <p class="item-description">Napa Valley, US</p>
+                                    </div>
+                                    <p class="item-price">$69.00</p>
+                                </div>
+                            </div>
+
+                            <h3 class="menu-title-sparkling-wine">Sparkling Wine</h3>
+                            <div class="menu-description-sparkling">
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Prosecco Villa Jolanda</p>
+                                        <p class="item-description">Veneto, Italy</p>
+                                    </div>
+                                    <p class="item-price">$17 Glass / $59 Bottle</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Moscato Villa Jolanda</p>
+                                        <p class="item-description">Piemonte, Italy</p>
+                                    </div>
+                                    <p class="item-price">$17 Glass / $59 Bottle</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Lambrusco Cantina Settecani</p>
+                                        <p class="item-description">Emilia-Romagna, Italy</p>
+                                    </div>
+                                    <p class="item-price">$17 Glass / $59 Bottle</p>
+                                </div>
+                            </div>
+
+                            <h3 class="menu-title-cafe">Café and Tea</h3>
+                            <div class="menu-description-cafe">
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">American Coffee</p>
+                                    </div>
+                                    <p class="item-price">$4.00</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Espresso</p>
+                                    </div>
+                                    <p class="item-price">$5.75</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Double Espresso</p>
+                                    </div>
+                                    <p class="item-price">$6.75</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Cappuccino</p>
+                                    </div>
+                                    <p class="item-price">$8.75</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Tea, black or green</p>
+                                    </div>
+                                    <p class="item-price">$3.00</p>
+                                </div>
+                                <div class="item-two-columns">
+                                    <div class="item-title-and-description">
+                                        <p class="item-title">Macchiato</p>
+                                    </div>
+                                    <p class="item-price">$5.25</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!--MAIN: MENU-->
+
+        <!--TEAM-->
+            <article>
+                <section>
+                    <div class="team">
+                        <h2 class="team-title">Our team</h2>
+                        <div class="gordon">
+                            <img class="gordon-photo" src="images/gordon.png" alt="Gordon Ramsay">
+                            <div class="gordon-information">
+                                <p class="gordon-title">Gordon Ramsay</p>
+                                <p class="gordon-description">Gordon Ramsay is a British celebrity chef, best known for his high-adrenaline cooking shows. 
+                                <br>He also owns a chain of restaurants, which have been awarded 17 Michelin stars throughout the years.  
+                                <br><br>One of his most famous signature dishes is his beef Wellington.</p>
+                            </div>
+                        </div>
+                        <div class="alain">
+                            <img class="alain-photo" src="images/alain.png" alt="Alain Ducasse">
+                            <div class="alain-information">
+                                <p class="alain-title">Alain Ducasse</p>
+                                <p class="alain-description">Alain Ducasse is a French chef with 21 Michelin stars. 
+                                He owns over 30 restaurants and founded the Ecole Ducasse culinary school.
+                                <br><br>One of his signature dishes is the "Cappon Magro", a seafood salad first course based on a 16th century recipe.</p>
+                            </div>
+                        </div>
+                        <div class="thomas">
+                            <img class="thomas-photo" src="images/thomas.png" alt="Thomas Keller">
+                            <div class="thomas-information">
+                                <p class="thomas-title">Thomas Keller</p>
+                                <p class="thomas-description">An American chef known for his precise techniques and high standards, 
+                                Thomas Keller is the force behind The French Laundry in California, a restaurant celebrated for its exquisite French cuisine and exceptional service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        <!--TEAM-->
+        <!-- BOOKING-->
+        <h2 class="booking-section-title">Book a table!</h2>
+        <div class="booking-section">
+            <div class="booking-section-order-info">
+                <form method="POST" id="guestOrderForm">
+                    <div class="user-first-name">
+                        <input type="text" id="user-first-name" name="user-first-name" placeholder="First name" minlength="2" maxlength="12">
+                    </div>
+                    <div class="user-last-name">
+                        <input type="text" id="user-last-name" name="user-last-name" placeholder="Last name" required minlength="2" maxlength="12">
+                    </div>
+                    <div class="user-email">
+                        <input type="email" id="user-email" name="user-email" placeholder="E-mail address" required minlength="5">
+                    </div>
+                    <div class="user-telephone">
+                        <input type="tel" id="user-telephone" name="user-telephone" placeholder="Phone number" required minlength="10" maxlength="15">
+                    </div>
+
+                    <div class="date-and-time-section">
+                        <div class="user-date">
+                            <input type="date" id="user-date" name="user-date" placeholder="Order date" required>
+                        </div>
+                        <div class="user-time">
+                            <input type="time" id="user-time" name="user-time" placeholder="Order time" required>
+                        </div>
+                    </div>
+
+                    <div class="booking-section-table-info-inner">
+                        <fieldset id="table-size">
+                            <label>
+                                <input type="radio" value="2" name="table-size">Two-person table
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" value="4" name="table-size" checked>Four-person table
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" value="6" name="table-size">Six-person table
+                            </label>
+                        </fieldset>
+                        <fieldset id="table-location">
+                            <label>
+                                <input type="radio" value="indoors" name="location" checked>Indoors
+                            </label>
+                            <label>
+                                <input type="radio" value="outdoors" name="location">Outdoors
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="submit-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div id="toast" class="toast">Thank you for your reservation &#128031;</div>
+                </form>
+            </div>
+
+            <div class="map-section">
+                <a href="https://short-link.me/-5pA">
+                    <img src="images/map.png" alt="Our location on the map">
+                </a> 
+            </div>
+        </div>
+        <script>
+            const form = document.getElementById('guestOrderForm');
+            const toast = document.getElementById('toast');
+
+            form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Показать тост
+            toast.classList.add('show');
+
+            // Скрыть через 3 секунды
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+
+            // Очистить форму
+            form.reset();
+        });
+        </script>
+        <!-- BOOKING-->
+        </main> 
+
+        <!--FOOTER-->
+        <footer>
+            <div class="about-us-section">
+                <h2 class="about-us-header">About Little Salmon</h2>
+                <div class="about-us-description">
+                    <p class="about-us">Little Salmon is a cozy family restaurant where the vibrant flavors of the Mediterranean come to life. <br>
+                    From freshly grilled seafood to aromatic herbs and sun-kissed vegetables, our dishes are crafted with love and tradition. 
+                    Whether you're savoring a hearty paella, indulging in homemade hummus, or enjoying a perfectly grilled salmon fillet, every bite feels like a seaside escape.
+                    <br><br>
+                    <i>Little Salmon Restaurant is a harbour of finest tastes!</i></p>
+                </div>
+            </div>
+
+            <div class="contacts-section">
+                <h2 class="contacts-header">Contacts</h2>
+                <div class="contacts-description">    
+                    <p class="contacts">© Little Salmon 2025 <br> 23, Little Italia St. NY, USA</p>
+                    <br>
+                </div>
+                <div class="contacts-social-media">
+                    <a href="https://wa.me/+302109233182" target="_blank"><img class="whatsapp" title="Let's chat on WhatsApp" src="images/whatsapp.png"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img class="instagram" title="Follow us on Instagram" src="images/instagram.png"></a>
+                    <a href="mailto:example@email.com" target="_blank"><img class="email" title="Send us an email" src="images/email.png"></a>
+                </div>
+            </div>
+            <p class="copyright"><i>Code by Eduard Gafiiatullin</i> &#128293;&#128050; <br><i>Design by Anush Sargsyan</i> &#129412;</p>
+        </footer>
+        <!--FOOTER-->
+    </body>
+</html>
