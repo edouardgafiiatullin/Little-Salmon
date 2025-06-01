@@ -1,3 +1,16 @@
+/* 
+СТРУКТУРА АДАПТИВНЫХ СТИЛЕЙ:
+
+1. Основные стили (style.css) применяются для экранов 1920x1080+ (ваш ноутбук)
+2. Этот файл содержит переопределения только для меньших экранов
+3. Медиа-запросы работают по принципу mobile-first - от меньших к большим экранам
+
+ВАЖНО: Подключайте файлы в правильном порядке:
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+*/
+
+/* Базовые стили для мобильных устройств 320px+ */
 @media (min-width: 320px) {
     .tab {
         gap: 0px;
@@ -150,7 +163,7 @@
         width: 100%;
     }
     .map-section {
-        order: -1; /* перемещаем карту выше формы */
+        order: -1;
         width: 100%;
         margin: 0 auto 20px;
     }
@@ -162,14 +175,12 @@
     .date-and-time-section {
         display: flex;
         flex-direction: row;
-        justify-content: center;   /* центрирует по горизонтали */
+        justify-content: center;
         align-items: center;
-        gap: 10px;                 /* отступ между полями */
+        gap: 10px;
         width: 100%;
     }
-    input,
-    select,
-    textarea {
+    input, select, textarea {
         font-size: 14px;
     }
     .submit-button button {
@@ -254,111 +265,464 @@
         text-align: center;
     }
 }
-@media (min-width: 694px) {
-    .tab {
-        gap: 0px;
-        flex-wrap: wrap;
-    }
+
+/* Мобильные устройства средних размеров 360px+ (самое популярное разрешение) */
+@media (min-width: 360px) {
     .logo img {
-        pointer-events: none;
-        width: 40%;
-        object-fit: contain;
-        display: inline-block
+        width: 35%;
     }
     .moto {
-        text-align: center;
-        color: #000000;
-        font-family: "PlayfairDisplay";
+        font-size: 18px;
+    }
+    .menu-header {
+        font-size: 22px;
+    }
+    .tab button {
+        padding: 16px 18px;
         font-size: 17px;
     }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        font-size: 19px;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        font-size: 19px;
+    }
+    .item-title {
+        font-size: 17px;
+    }
+    .item-description {
+        font-size: 15px;
+    }
+    .item-price {
+        font-size: 15px;
+    }
+    .gordon-description, .alain-description, .thomas-description {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
+
+/* Крупные мобильные устройства 414px+ (iPhone Plus, крупные Android) */
+@media (min-width: 414px) {
+    .logo img {
+        width: 32%;
+    }
+    .moto {
+        font-size: 19px;
+    }
+    .menu-header {
+        font-size: 24px;
+    }
+    .tab button {
+        padding: 18px 20px;
+        font-size: 18px;
+    }
+    .item-two-columns {
+        width: 85%;
+        gap: 45px;
+    }
+    .item-title {
+        font-size: 18px;
+    }
+    .item-description {
+        font-size: 16px;
+    }
+    .item-price {
+        font-size: 16px;
+    }
+    .gordon img, .alain img, .thomas img {
+        width: 55%;
+    }
+    .gordon-title, .alain-title, .thomas-title {
+        font-size: 20px;
+    }
+    .gordon-description, .alain-description, .thomas-description {
+        font-size: 17px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .about-us-description {
+        font-size: 17px;
+        padding: 0 25px;
+    }
+}
+
+/* Планшеты портретная ориентация 768px+ */
 @media (min-width: 768px) {
-    .tab {
-        gap: 0px;
-        flex-wrap: nowrap;
-    }
     .logo img {
-        pointer-events: none;
+        width: 25%;
+    }
+    .moto {
+        font-size: 22px;
+    }
+    .menu {
+        margin-top: 60px;
+    }
+    .menu-header {
+        font-size: 28px;
+    }
+    .tab {
+        gap: 10px;
+        flex-wrap: nowrap;
+        padding-bottom: 30px;
+    }
+    .tab button {
+        padding: 20px 25px;
+        font-size: 20px;
+        flex: 1;
+        min-width: auto;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        font-size: 22px;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        font-size: 22px;
+    }
+    .item-two-columns {
+        width: 90%;
+        font-size: 22px;
+        gap: 50px;
+    }
+    .item-title {
+        font-size: 20px;
+    }
+    .item-description {
+        font-size: 18px;
+    }
+    .item-price {
+        font-size: 18px;
+    }
+    .team-title {
+        font-size: 24px;
+    }
+    .gordon img, .alain img, .thomas img {
         width: 40%;
-        object-fit: contain;
-        display: inline-block
+    }
+    .gordon-title, .alain-title, .thomas-title {
+        font-size: 22px;
+    }
+    .gordon-description, .alain-description, .thomas-description {
+        font-size: 18px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .booking-section {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .booking-section-order-info {
+        width: 60%;
+    }
+    .map-section {
+        order: 0;
+        width: 40%;
+        margin: 0;
+    }
+    .map-section img {
+        width: 100%;
+    }
+    .date-and-time-section {
+        gap: 15px;
+    }
+    input, select, textarea {
+        font-size: 16px;
+    }
+    .submit-button button {
+        font-size: 18px;
+        padding: 12px 35px;
+    }
+    .about-us-header {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+    .about-us-description {
+        font-size: 18px;
+        padding: 0 40px;
+    }
+    .contacts-header {
+        font-size: 24px;
+    }
+    .contacts {
+        font-size: 18px;
+    }
+    .contacts-social-media {
+        gap: 25px;
+    }
+    .whatsapp {
+        width: 38px;
+        height: 36px;
+    }
+    .instagram {
+        width: 36px;
+        height: 36px;
+    }
+    .email {
+        width: 48px;
+        height: 36px;
+    }
+    .copyright {
+        font-size: 18px;
+    }
+}
+
+/* Планшеты альбомная ориентация и маленькие ноутбуки 1024px+ */
+@media (min-width: 1024px) {
+    .logo img {
+        width: 20%;
     }
     .moto {
-        text-align: center;
-        color: #000000;
-        font-family: "PlayfairDisplay";
+        font-size: 24px;
+    }
+    .menu {
+        margin-top: 70px;
+    }
+    .menu-header {
+        font-size: 32px;
+    }
+    .tab button {
+        padding: 22px 30px;
+        font-size: 22px;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        font-size: 24px;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        font-size: 24px;
+    }
+    .item-two-columns {
+        width: 85%;
+        font-size: 24px;
+        gap: 60px;
+    }
+    .item-title {
+        font-size: 22px;
+    }
+    .item-description {
+        font-size: 20px;
+    }
+    .item-price {
+        font-size: 20px;
+    }
+    .team-title {
+        font-size: 28px;
+    }
+    .gordon img, .alain img, .thomas img {
+        width: 35%;
+    }
+    .gordon-title, .alain-title, .thomas-title {
+        font-size: 24px;
+    }
+    .gordon-description, .alain-description, .thomas-description {
+        font-size: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .booking-section-order-info {
+        width: 55%;
+    }
+    .map-section {
+        width: 45%;
+    }
+    .about-us-header {
+        font-size: 28px;
+        margin-top: 60px;
+    }
+    .about-us-description {
+        font-size: 20px;
+        padding: 0 60px;
+    }
+    .contacts-header {
+        font-size: 28px;
+    }
+    .contacts {
+        font-size: 20px;
+    }
+    .copyright {
         font-size: 20px;
     }
 }
-@media (min-width: 843px) {
-    .tab {
-        gap: 10px;
-        flex-wrap: nowrap;
-    }
+
+/* Стандартные ноутбуки 1366px+ */
+@media (min-width: 1366px) {
     .logo img {
-        pointer-events: none;
-        width: 20%;
-        object-fit: contain;
-        display: inline-block
+        width: 18%;
     }
     .moto {
-        text-align: center;
-        color: #000000;
-        font-family: "PlayfairDisplay";
-        font-size: 17px;
+        font-size: 26px;
+    }
+    .menu {
+        margin-top: 80px;
+    }
+    .menu-header {
+        font-size: 36px;
+    }
+    .tab button {
+        padding: 24px 35px;
+        font-size: 24px;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        font-size: 26px;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        font-size: 26px;
+    }
+    .item-two-columns {
+        width: 80%;
+        font-size: 26px;
+        gap: 70px;
+    }
+    .item-title {
+        font-size: 24px;
+    }
+    .item-description {
+        font-size: 22px;
+    }
+    .item-price {
+        font-size: 22px;
+    }
+    .team-title {
+        font-size: 32px;
+    }
+    .gordon img, .alain img, .thomas img {
+        width: 30%;
+    }
+    .gordon-title, .alain-title, .thomas-title {
+        font-size: 26px;
+    }
+    .gordon-description, .alain-description, .thomas-description {
+        font-size: 22px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .about-us-header {
+        font-size: 32px;
+        margin-top: 70px;
+    }
+    .about-us-description {
+        font-size: 22px;
+        padding: 0 80px;
+    }
+    .contacts-header {
+        font-size: 32px;
+    }
+    .contacts {
+        font-size: 22px;
+    }
+    .contacts-social-media {
+        gap: 30px;
+    }
+    .whatsapp {
+        width: 42px;
+        height: 40px;
+    }
+    .instagram {
+        width: 40px;
+        height: 40px;
+    }
+    .email {
+        width: 52px;
+        height: 40px;
+    }
+    .copyright {
+        font-size: 22px;
     }
 }
-@media (min-width: 903px) {
-    .tab {
-        gap: 10px;
-        flex-wrap: nowrap;
-    }
+
+/* Очень большие мониторы 2560px+ (4K и выше) */
+@media (min-width: 2560px) {
     .logo img {
-        pointer-events: none;
-        width: 20%;
-        object-fit: contain;
-        display: inline-block
+        width: 15%;
     }
     .moto {
-        text-align: center;
-        color: #000000;
-        font-family: "PlayfairDisplay";
+        font-size: 30px;
+    }
+    .menu {
+        margin-top: 100px;
+    }
+    .menu-header {
+        font-size: 42px;
+    }
+    .tab button {
+        padding: 28px 40px;
+        font-size: 28px;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        font-size: 30px;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        font-size: 30px;
+    }
+    .item-two-columns {
+        width: 75%;
+        font-size: 30px;
+        gap: 80px;
+    }
+    .item-title {
+        font-size: 28px;
+    }
+    .item-description {
+        font-size: 26px;
+    }
+    .item-price {
+        font-size: 26px;
+    }
+    .team-title {
+        font-size: 38px;
+    }
+    .gordon img, .alain img, .thomas img {
+        width: 25%;
+    }
+    .gordon-title, .alain-title, .thomas-title {
+        font-size: 30px;
+    }
+    .gordon-description, .alain-description, .thomas-description {
+        font-size: 26px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .booking-section-order-info {
+        width: 50%;
+    }
+    .map-section {
+        width: 50%;
+    }
+    input, select, textarea {
         font-size: 20px;
     }
-}
-@media (min-width: 970px) {
-    .tab {
-        gap: 20px;
-        flex-wrap: nowrap;
+    .submit-button button {
+        font-size: 22px;
+        padding: 15px 45px;
     }
-    .logo img {
-        pointer-events: none;
-        width: 20%;
-        object-fit: contain;
-        display: inline-block
+    .about-us-header {
+        font-size: 38px;
+        margin-top: 80px;
     }
-    .moto {
-        text-align: center;
-        color: #000000;
-        font-family: "PlayfairDisplay";
-        font-size: 20px;
+    .about-us-description {
+        font-size: 26px;
+        padding: 0 120px;
     }
-}
-@media (min-width: 1200px) {
-    .tab {
-        gap: 20px;
-        flex-wrap: nowrap;
+    .contacts-header {
+        font-size: 38px;
     }
-    .logo img {
-        pointer-events: none;
-        width: 20%;
-        object-fit: contain;
-        display: inline-block
+    .contacts {
+        font-size: 26px;
     }
-    .moto {
-        text-align: center;
-        color: #000000;
-        font-family: "PlayfairDisplay";
-        font-size: 20px;
+    .contacts-social-media {
+        gap: 35px;
+    }
+    .whatsapp {
+        width: 48px;
+        height: 46px;
+    }
+    .instagram {
+        width: 46px;
+        height: 46px;
+    }
+    .email {
+        width: 58px;
+        height: 46px;
+    }
+    .copyright {
+        font-size: 26px;
     }
 }
