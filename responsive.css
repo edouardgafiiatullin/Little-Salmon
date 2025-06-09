@@ -1,0 +1,1083 @@
+/* Делаем следующие брейкпоинты:
+1) min-width: 430px - для мобильных устройств
+*/
+@media (min-width: 430px) {
+    .tab {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+    .logo img {
+        pointer-events: none;
+        width: 40%;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .moto {
+        text-align: center;
+        color: #000000;
+        font-family: "PlayfairDisplay";
+        font-size: 17px;
+    }
+    .menu {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .menu-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 20px;
+        color: #14482F
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: "PlayfairDisplay";
+    }
+    .tab {
+        overflow: hidden;
+        text-align: center;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .item-two-columns {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        font-weight: 300;
+        align-items: center;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        gap: 40px;
+    }
+    .item-title {
+        font-family: "PlayfairDisplay";
+        font-weight: 300; 
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        margin: 0;
+    }
+    .item-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300; 
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        margin: 0;
+    }
+    .item-price {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;   
+        height: 100%;
+        margin: 0;
+        font-size: 14px;             
+    }
+    .team-title {
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        text-align: center;
+    }
+    .manager img, .chef img, .sous-chef img, .waiter img {
+        text-align: center;
+        width: 50%;
+        object-fit: contain;
+        opacity: 0.9;
+        pointer-events: none;
+        display: inline-block;
+    }
+    .manager-title, .chef-title, .sous-chef-title, .waiter-title {
+        font-family: "PlayfairDisplay";
+        font-size: 18px;
+        text-align: center;
+    }
+    .manager-description, .chef-description, .sous-chef-description, .waiter-description {
+        font-family: "PlayfairDisplay";
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+    .booking-section-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "PlayfairDisplay", serif;
+        font-style: italic;
+    }   
+    .booking-section {
+        flex-direction: column;
+    }
+    .booking-section-order-info {
+        width: 100%;
+    }
+    .booking-section-table-info-inner {
+        max-width: 300px;       /* ограничивает ширину блока */
+        margin: 0 auto;         /* выравнивание по центру */
+        padding: 5px;          /* внутренняя отступ для воздуха */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    .map-section {
+        order: -1; /* перемещаем карту выше формы */
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .map-section img {
+        width: 80%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .date-and-time-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   /* центрирует по горизонтали */
+        align-items: center;
+        gap: 10px;                 /* отступ между полями */
+        width: 100%;
+    }
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+    .submit-button button {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "PlayfairDisplay";
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #147407;
+        color: #D9D9D9;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box; 
+        cursor: pointer;
+    }
+    .about-us-header {
+        margin-top: 40px;
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 20px;
+        color: #14482F;
+    }
+    .about-us-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    .contacts-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .contacts {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        color: #555555;
+    }
+    .contacts-social-media {
+        justify-content: center;
+        margin-top: -15px;
+        display: flex;
+        gap: 20px;
+    }
+    .whatsapp {
+        width: 34px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .instagram {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .email {
+        width: 44px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;    
+    }
+    .copyright {
+        margin-top: 25px;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+
+/* 2) min-width: 768px - для планшетов */
+@media (min-width: 768px) {
+    .tab {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+    .logo img {
+        pointer-events: none;
+        width: 40%;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .moto {
+        text-align: center;
+        color: #000000;
+        font-family: "PlayfairDisplay";
+        font-size: 19px;
+    }
+    .menu {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .menu-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 20px;
+        color: #14482F
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: "PlayfairDisplay";
+    }
+    .tab {
+        overflow: hidden;
+        text-align: center;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .item-two-columns {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        font-weight: 300;
+        align-items: center;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        gap: 40px;
+    }
+    .item-title {
+        font-family: "PlayfairDisplay";
+        font-weight: 300; 
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        margin: 0;
+    }
+    .item-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300; 
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        margin: 0;
+    }
+    .item-price {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;   
+        height: 100%;
+        margin: 0;
+        font-size: 16px;             
+    }
+    .team-title {
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        text-align: center;
+    }
+    .manager img, .chef img, .sous-chef img, .waiter img {
+        text-align: center;
+        width: 30%;
+        object-fit: contain;
+        opacity: 0.9;
+        pointer-events: none;
+        display: inline-block;
+    }
+    .manager-title, .chef-title, .sous-chef-title, .waiter-title {
+        font-family: "PlayfairDisplay";
+        font-size: 18px;
+        text-align: center;
+    }
+    .manager-description, .chef-description, .sous-chef-description, .waiter-description {
+        font-family: "PlayfairDisplay";
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .booking-section-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "PlayfairDisplay", serif;
+        font-style: italic;
+    }   
+    .booking-section {
+        display: flex;
+        flex-direction: row; /* 👈 переопределяем column */
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 25px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+    .booking-section-order-info {
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #333333b0;
+    }
+    .booking-section-table-info-inner {
+        max-width: 300px;       /* ограничивает ширину блока */
+        margin: 0 auto;         /* выравнивание по центру */
+        padding: 5px;          /* внутренняя отступ для воздуха */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    .map-section {
+        order: 0; /* 👈 сбрасываем "перемещённость" карты */
+        margin-top: 25px;
+    }
+    .map-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .date-and-time-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   /* центрирует по горизонтали */
+        align-items: center;
+        gap: 10px;                 /* отступ между полями */
+        width: 100%;
+    }
+    input,
+    select,
+    textarea {
+        font-size: 15px;
+    }
+    fieldset {
+        border: none;
+        font-family: "PlayfairDisplay", serif; 
+        font-weight: 300;
+        font-size: 16px; 
+        color: #333333b0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .submit-button button {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "PlayfairDisplay";
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #147407;
+        color: #D9D9D9;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box; 
+        cursor: pointer;
+    }
+    .about-us-header {
+        margin-top: 40px;
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 20px;
+        color: #14482F;
+    }
+    .about-us-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-left: 40px;
+        margin-right: 40px;
+        max-width: 1000px;
+        text-align: justify;
+    }
+    .contacts-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .contacts {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        color: #555555;
+    }
+    .contacts-social-media {
+        justify-content: center;
+        margin-top: -15px;
+        display: flex;
+        gap: 20px;
+    }
+    .whatsapp {
+        width: 34px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .instagram {
+        width: 32px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .email {
+        width: 44px;
+        height: 32px;
+        object-fit: contain;
+        display: inline-block;    
+    }
+    .copyright {
+        margin-top: 25px;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+/*
+min-width: 1024px - для десктопов
+*/
+@media (min-width: 1024px) {
+    .tab {
+        gap: 0px;
+        flex-wrap: wrap;
+    }
+    .logo img {
+        pointer-events: none;
+        width: 40%;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .moto {
+        text-align: center;
+        color: #000000;
+        font-family: "PlayfairDisplay";
+        font-size: 22px;
+    }
+    .menu {
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .menu-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 23px;
+        color: #14482F
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "PlayfairDisplay";
+    }
+    .tab {
+        overflow: hidden;
+        text-align: center;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .menu-title-soups, .menu-title-salads, .menu-title-cold-appetizers, .menu-title-warm-appetizers, .menu-title-pasta, .menu-title-fish-and-seafood, .menu-title-sides, .menu-title-drinks {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 22px;
+        text-decoration: underline;
+    }
+    .menu-title-red-wine, .menu-title-rose-wine, .menu-title-white-wine, .menu-title-sparkling-wine, .menu-title-cafe {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .item-two-columns {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        font-weight: 300;
+        align-items: center;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        gap: 40px;
+    }
+    .item-title {
+        font-family: "PlayfairDisplay";
+        font-weight: 300; 
+        font-size: 20px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        margin: 0;
+    }
+    .item-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300; 
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 1px;
+        line-height: 2.0;
+        color: #555555;
+        margin: 0;
+    }
+    .item-price {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;   
+        height: 100%;
+        margin: 0;
+        font-size: 18px;             
+    }
+    .team-title {
+        font-family: "PlayfairDisplay";
+        font-size: 23px;
+        text-align: center;
+    }
+    .team-internal-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 3rem;
+    justify-items: center;
+    align-items: start;
+    }
+    .manager, .chef, .sous-chef, .waiter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+    .manager img, .chef img, .sous-chef img, .waiter img{
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+    pointer-events: none;
+    margin-bottom: 1rem;
+    }
+    .manager-title, .chef-title, .sous-chef-title, .waiter-title {
+        font-family: "PlayfairDisplay";
+        font-size: 21px;
+        text-align: center;
+    }
+    .manager-description, .chef-description, .sous-chef-description, .waiter-description {
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .booking-section-title {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 400;
+        font-family: "PlayfairDisplay", serif;
+        font-style: italic;
+    }   
+    .booking-section {
+        display: flex;
+        flex-direction: row; /* 👈 переопределяем column */
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+    .booking-section-order-info {
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #333333b0;
+    }
+    .booking-section-table-info-inner {
+        max-width: 300px;       /* ограничивает ширину блока */
+        margin: 0 auto;         /* выравнивание по центру */
+        padding: 5px;          /* внутренняя отступ для воздуха */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+    .map-section {
+        order: 0; /* 👈 сбрасываем "перемещённость" карты */
+        margin-top: 25px;
+    }
+    .map-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .date-and-time-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;   /* центрирует по горизонтали */
+        align-items: center;
+        gap: 10px;                 /* отступ между полями */
+        width: 100%;
+    }
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+    fieldset {
+        border: none;
+        font-family: "PlayfairDisplay", serif; 
+        font-weight: 300;
+        font-size: 16px; 
+        color: #333333b0;
+        border-radius: 5px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .submit-button button {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: "PlayfairDisplay";
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #147407;
+        color: #D9D9D9;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box; 
+        cursor: pointer;
+    }
+    .about-us-header {
+        margin-top: 40px;
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 23px;
+        color: #14482F;
+    }
+    .about-us-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin-left: 40px;
+        margin-right: 40px;
+        max-width: 1000px;
+        text-align: justify;
+    }
+    .contacts-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 23px;
+    }
+    .contacts {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        color: #555555;
+    }
+    .contacts-social-media {
+        justify-content: center;
+        margin-top: -15px;
+        display: flex;
+        gap: 20px;
+    }
+    .whatsapp {
+        width: 40px;
+        height: 38px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .instagram {
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .email {
+        width: 52px;
+        height: 38px;
+        object-fit: contain;
+        display: inline-block;    
+    }
+    .copyright {
+        margin-top: 25px;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 21px;
+        text-align: center;
+    }
+}
+/*
+4) min-width: 1280px - для широких экранов */
+
+@media (min-width: 1280px) {
+    .logo {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .logo img {
+        pointer-events: none;
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .moto {
+        text-align: center;
+        color: #000000;
+        font-family: "PlayfairDisplay";
+        font-size: 22px;
+    }
+    .tab {
+        overflow: hidden;
+        text-align: center;
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding-bottom: 20px;
+        flex-wrap: nowrap;
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: "PlayfairDisplay";
+    }
+    .team-title {
+        font-family: "PlayfairDisplay";
+        font-size: 23px;
+        text-align: center;
+    }
+    .team-internal-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+    .manager, .chef, .sous-chef, .waiter {
+        text-align: center;
+        width: 25%;
+        object-fit: contain;
+        pointer-events: none;
+        display: inline-block;
+    }
+    .manager-title, .chef-title, .sous-chef-title, .waiter-title {
+        font-family: "PlayfairDisplay";
+        font-size: 21px;
+        text-align: center;
+    }
+    .manager-description, .chef-description, .sous-chef-description, .waiter-description {
+        font-family: "PlayfairDisplay";
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        /* padding: 10px; */
+    }
+    .manager img, .chef img, .sous-chef img, .waiter img {
+        text-align: center;
+        width: 60%;
+        object-fit: contain;
+        opacity: 0.9;
+        pointer-events: none;
+        display: inline-block;
+    }
+
+    .booking-section-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "PlayfairDisplay", serif;
+    font-style: italic;
+}
+.booking-section {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    align-items: flex-start;
+    display: flex;;
+    width: 100%;
+    justify-content: space-between;
+}
+.booking-section-order-info {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-left: 15%; */
+    box-sizing: border-box;
+}
+.booking-section-table-info {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333333b0;
+}
+.booking-section-table-info-inner {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+fieldset {
+    border: none;
+    max-width: 100%;
+    font-family: "PlayfairDisplay", serif; 
+    font-weight: 300;
+    font-size: 16px; 
+    color: #333333b0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.date-and-time-section {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.user-first-name, .user-last-name, .user-email, .user-telephone, .user-date, .user-time {
+    margin-top: 20px;
+    color: #333333b0;
+}
+input, textarea {
+    max-width: 400px;
+    font-family: "PlayfairDisplay", serif;  
+    font-weight: 300;
+    font-size: 16px;
+    color: #333333b0;
+    padding: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.submit-button button {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "PlayfairDisplay";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #147407;
+    color: #D9D9D9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    cursor: pointer;
+}
+.map-section {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    margin-right: 15%;
+}
+
+.about-us-header {
+        margin-top: 40px;
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 600;
+        font-size: 23px;
+        color: #14482F;
+    }
+    .about-us-description {
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+    }
+    .contacts-header {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 23px;
+    }
+    .contacts {
+        text-align: center;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 1.4;
+        color: #555555;
+    }
+    .contacts-social-media {
+        justify-content: center;
+        margin-top: -15px;
+        display: flex;
+        gap: 20px;
+    }
+    .whatsapp {
+        width: 40px;
+        height: 38px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .instagram {
+        width: 38px;
+        height: 38px;
+        object-fit: contain;
+        display: inline-block;
+    }
+    .email {
+        width: 52px;
+        height: 38px;
+        object-fit: contain;
+        display: inline-block;    
+    }
+    .copyright {
+        margin-top: 25px;
+        font-family: "PlayfairDisplay";
+        font-weight: 300;
+        font-size: 21px;
+        text-align: center;
+    }
+}
